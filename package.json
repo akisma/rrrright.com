@@ -1,0 +1,23 @@
+{
+  "name": "rrrright.com",
+  "version": "0.1.0",
+  "description": "website for rrrright band",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akisma/rrrright.com.git"
+  },
+  "keywords": [
+    "music",
+    "brutalist"
+  ],
+  "author": "jess jacobs (akisma@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akisma/rrrright.com/issues"
+  },
+  "homepage": "https://github.com/akisma/rrrright.com#readme"
+}
