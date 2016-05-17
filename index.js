@@ -14,9 +14,9 @@ var readFileThunk = function(src) {
 
 var app = koa();
 
-app.use(router.get('/', function *(){
+app.use(function *(){
   this.body = yield readFileThunk(__dirname + '/index.html');
-}));
+});
 
-app.listen(80);
-console.log('Koa listening on port 80');
+app.listen(8080);
+console.log('Koa listening on port 8080');
