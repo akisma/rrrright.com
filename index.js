@@ -12,20 +12,13 @@ var readFileThunk = function(src) {
   });
 }
 
-try {
+var app = koa();
 
+// app.use(require('koa-static')(__dirname + '/static'));
 
-	var app = koa();
+app.use(function *(){
+  this.body = yield readFileThunk(__dirname + '/index.html');
+});
 
-	app.use(require('koa-static')(__dirname + '/static'));
-
-	app.use(function *(){
-	  this.body = yield readFileThunk(__dirname + '/index.html');
-	});
-
-	app.listen(8080);
-	console.log('Koa listening on port 8080');
-
-} catch(e){
-	console.log(e);
-}
+app.listen(8080);
+console.log('Koa listening on port 8080');
