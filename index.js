@@ -14,7 +14,7 @@ var readFileThunk = function(src) {
 
 var app = koa();
 
-// app.use(require('koa-static')(__dirname + '/static'));
+app.use(require('koa-static')(__dirname + '/static'));
 
 app.use(function *(){
   this.body = yield readFileThunk(__dirname + '/index.html');

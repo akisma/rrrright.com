@@ -27,9 +27,13 @@
 				height: 68.5vw;
 			}
 
+			.background-splash img {
+				display: none;
+			}
+
 			.background-splash .clipz {
 				position: absolute;
-				top: 30%;
+				top: 25%;
 			}
 
 			.background-splash .clipz a {
@@ -49,7 +53,15 @@
 				background-color: rgba(176,198,237,.5);
 				font-size: 2.5vw;
 				display: inline-block;
-				margin-bottom: .5em;
+				margin-bottom: 0;
+			}
+
+			h3 {
+				display: inline;
+			}
+
+			#mc_embed_signup {
+				margin-top: 1em;
 			}
 
 			.social {
@@ -82,6 +94,11 @@
 				}
 
 				.background-splash video {
+					display: none;
+				}
+
+				.background-splash img {
+					display: block;
 					margin-top: -20vw;
     				margin-left: -108vw;
     				width: 3501px;
@@ -103,8 +120,9 @@
 <body>
 	<div class="background-splash">
 		<h1>....rrrright?</h1>
+		<img src="static/glitch-fire.jpg" />
 		<video poster="" autoplay="" loop="" >
-			<source src="/static/glitch-fire.webm" type="video/webm" />
+			<source src="static/glitch-fire.webm" type="video/webm" />
 		</video>
 		<ul class="clipz">
 			<li><a href="https://soundcloud.com/rrrrightband/bang-bang-preview?in=rrrrightband/sets/previews">bang bang</a></li>
@@ -123,7 +141,7 @@
 			<div id="mc_embed_signup">
 			<form action="//rrrright.us13.list-manage.com/subscribe/post?u=ef528a5c1d808f133b53b71d5&amp;id=40a9c0023a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-				<h2>mailing list:</h2>
+				<h3>mailing list:</h3>
 				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 				<div id="mce-responses" class="clear">
