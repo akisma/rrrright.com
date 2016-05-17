@@ -18,5 +18,5 @@ app.use(router.get('/', function *(){
   this.body = yield readFileThunk(__dirname + '/index.html');
 }));
 
-app.listen(8080);
+app.listen(80);
 console.log('Koa listening on port 80');
