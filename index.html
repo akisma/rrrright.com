@@ -27,7 +27,7 @@
 				height: 68.5vw;
 			}
 
-			.background-splash img {
+			.background-splash .desktop-hide {
 				display: none;
 			}
 
@@ -41,6 +41,24 @@
 				text-shadow: 36px 27px 10px rgba(256,256,256,1);
 	    		background: rgba(256,256,256,0.5);
 			}
+
+			.background-splash .bang-bang {
+				position: absolute;
+			    top: 4vw;
+			    right: 5vw;
+			    width: 500px;
+			}
+
+				.background-splash .bang-bang img {
+					width: 500px;
+				}
+
+				.background-splash .bang-bang h2 {
+					position: absolute;
+					bottom: 0;
+    				text-align: center;
+				}
+
 
 		footer {
 			position: fixed;
@@ -98,7 +116,7 @@
 					display: none;
 				}
 
-				.background-splash img {
+				.background-splash .desktop-hide {
 					display: block;
 					margin-top: -20vw;
     				margin-left: -108vw;
@@ -106,9 +124,29 @@
     				height: auto;
 				}
 
-				.background-splash .clipz a {
-					font-size: 4em;
+				.background-splash .clipz {
+					top: 28%;
+				    right: 4vw;
+				    font-size: .8em;
 				}
+
+					.background-splash .clipz a {
+						font-size: 4em;
+					}
+
+				.background-splash .bang-bang {
+					padding-left: 40px;
+					width: auto;
+					right: unset;
+					top: 51vw;
+				}
+
+					.background-splash .bang-bang h2 {
+						position: absolute;
+					    bottom: 0;
+					    text-align: center;
+					    font-size: 3em;
+					}
 
 				footer h2 {
 					font-size: 4em;
@@ -140,12 +178,11 @@
 <body>
 	<div class="background-splash">
 		<h1>....rrrright?</h1>
-		<img src="static/glitch-fire.jpg" />
+		<img class="desktop-hide" src="static/glitch-fire.jpg" />
 		<video poster="" autoplay="" loop="" >
 			<source src="static/glitch-fire.webm" type="video/webm" />
 		</video>
 		<ul class="clipz">
-			<li><a href="https://soundcloud.com/rrrrightband/bang-bang-preview?in=rrrrightband/sets/previews">bang bang</a></li>
 			<li><a href="https://soundcloud.com/rrrrightband/threeee-preview?in=rrrrightband/sets/previews">threeee</a></li>
 			<li><a href="https://soundcloud.com/rrrrightband/spookiness-preview?in=rrrrightband/sets/previews">spookinezz</a></li>
 			<li><a href="https://soundcloud.com/rrrrightband/feedback-monstah-preview?in=rrrrightband/sets/previews">feedback monstah</a></li>
@@ -155,8 +192,14 @@
 			<li><a href="https://soundcloud.com/rrrrightband/robotz-preview?in=rrrrightband/sets/previews">robotz</a></li>
 			<li><a href="https://soundcloud.com/rrrrightband/snuff-the-riffstah-preview?in=rrrrightband/sets/previews">snuff the riffstah</a></li>
 		</ul>
+
+		<div class="bang-bang">
+			<img src="/static/1.jpg" alt="live" />
+			<h2><a href="https://soundcloud.com/rrrrightband/bang-bang-live-improv-at-your-friends-fest-july-30th-2016">BANG BANG LIVE @ ONCE BALLROOM 07/30/16</a></h2>
+		</div>
+
 		<footer>
-			<h2>DEBUT SHOW JULY 30 @ ONCE in SOMERVILLE - MORE SOON</h2>
+			<h2>JOIN OUR MAILING LIST TO GET A FREE DOWNLOAD OF BANG BANG</h2>
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 			<form action="//rrrright.us13.list-manage.com/subscribe/post?u=ef528a5c1d808f133b53b71d5&amp;id=40a9c0023a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -173,6 +216,8 @@
 			</div>
 			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 			<!--End mc_embed_signup-->
+
+			<h2>VIDEO COMING SOON</h2>
 			<ul class="social">
 				<li><a href="http://www.instagram.com/rrrrightband">insta</a></li>
 				<li><a href="http://www.twitter.com/rrrrightband">twitta</a></li>
